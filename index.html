@@ -1,0 +1,40 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Bio Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Bio Site</h1>
+    <div class="search-bar">
+        <input type="text" id="search" placeholder="Pesquise produtos...">
+        <button onclick="searchProducts()">Buscar</button>
+    </div>
+    <div id="products">
+        <a href="link_produto_1" target="_blank">Produto 1</a><br>
+        <a href="link_produto_2" target="_blank">Produto 2</a><br>
+        <a href="link_produto_3" target="_blank">Produto 3</a><br>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+
+    <script>
+        function searchProducts() {
+            const query = document.getElementById('search').value;
+            alert('Você pesquisou por: ' + query);
+            // Aqui você pode adicionar lógica para filtrar os produtos
+        }
+    </script>
+</body>
+</html>
+```
